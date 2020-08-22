@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="editor" class="markdown-body">
+
+</div>
+
+
+@section Scripts{ 
+    <script>
+        const editor = new toastui.Editor({
+            el: document.querySelector('#editor'),
+            previewStyle: 'vertical',
+            height: '500px',
+        });
+    </script>
+}
